@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.btn.btn-primary{margin-right: 10px;}
+.sammery_pera p{padding: 6px 12px; background: #999; color: #fff; border-radius: 3px; margin-right: 10px;}
+.preview_text{padding: 15px; background: #ddd; border-radius: 5px;}
