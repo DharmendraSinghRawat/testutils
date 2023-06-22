@@ -37,6 +37,12 @@
   }
 }
 
-.btn.btn-primary{margin-right: 10px;}
-.sammery_pera p{padding: 6px 12px; background: #999; color: #fff; border-radius: 3px; margin-right: 10px;}
-.preview_text{padding: 15px; background: #ddd; border-radius: 5px;}
+.alert_main{min-height: 46px;}
+.alert_main .alert{padding: 10px 15px;}
+.bg-dark{background: #031b3f !important;}
+.bg-light{background: #eaf2fb !important;}
+.btn.btn-primary, .btn.btn-info{margin:5px 10px 5px 0px; padding: 8px 16px;}
+.btn.btn-info{margin-right:0px;}
+.sammery_pera p{padding: 6px 12px; background: rgb(0 0 0 / 50%); color: #fff; border-radius: 3px; margin-right: 10px;}
+.preview_text{padding: 10px 15px; border-radius: 5px;}
+.img_full_width{width: 100%;}

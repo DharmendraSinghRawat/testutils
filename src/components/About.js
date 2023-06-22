@@ -1,34 +1,40 @@
-import React, {useState} from 'react'
+// import React, { useState } from 'react'
+import React from 'react'
+import aboutlogo from './images/about.jpg'
 
-export default function About() {
-    
-    const [myStyle, setMyStyle] = useState( {
-        color: 'black',
-        backgroundColor: 'white'
-    });
+export default function About(props) {
 
-    const [btntext, setBtnText] = useState("Enable Dark Mode")
+    // const [myStyle, setMyStyle] = useState({
+    //     color: 'black',
+    //     backgroundColor: 'white'
+    // });
 
-    let toggleStyle = ()=>{
-        if (myStyle.color === 'black') {
-            setMyStyle({
-                color: 'white',
-                backgroundColor: 'black'
-            })
-            setBtnText("Enable Light Mode");
-        }
-        else{
-            setMyStyle({
-                color: 'black',
-                backgroundColor: 'white'
-            })
-            setBtnText("Enable Dark Mode");
-        }
+    // const [btntext, setBtnText] = useState("Enable Dark Mode")
+
+    // let toggleStyle = () => {
+    //     if (myStyle.color === 'black') {
+    //         setMyStyle({
+    //             color: 'white',
+    //             backgroundColor: 'black'
+    //         })
+    //         setBtnText("Enable Light Mode");
+    //     }
+    //     else {
+    //         setMyStyle({
+    //             color: 'black',
+    //             backgroundColor: 'white'
+    //         })
+    //         setBtnText("Enable Dark Mode");
+    //     }
+    // }
+
+    let myStyle = {
+        color: props.mode==='dark'?'#fff':'#000'
     }
 
     return (
         <>
-            <div className="container my-4 py-2 pb-3" style={myStyle}>
+            {/* <div className="container my-4 py-2 pb-3" style={myStyle}>
 
                 <h1 className='mb-3'>About Us</h1>
 
@@ -76,7 +82,41 @@ export default function About() {
 
                 </div>
 
-            </div>
+            </div> */}
+
+
+
+            <section className="our-service mt-3" style={myStyle}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 col-sm-12">
+                            <img src={aboutlogo} alt="about" className='img_full_width'/>
+                        </div>
+                        <div className="col-md-6 col-sm-12">
+                            <h5>About Us</h5>
+
+                            <h2 className="my-3">Our Featured Service that We Provide</h2>
+                            <p>Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress. Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress. Check when your next meeting is coming up, and keep up with your progress. Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</p>
+                            <ul className="list-unstyled ps-4">
+                                <li className="mb-2">
+                                    <span>List of the tasks that require your attention.</span>
+                                </li>
+                                <li className="mb-2">
+                                    <span>Google Calendar integration to see when interruptions will happen</span>
+                                </li>
+                                <li className="mb-2">
+                                    <span>List of the tasks that require your attention.</span>
+                                </li>
+                                <li>
+                                    <span>Google Calendar integration to see when interruptions will happen</span>
+                                </li>
+                            </ul>
+                            <p>Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress. Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</p>
+                            <p>Check when your next meeting is coming up, and keep up with your progress. Seamlessly see the tasks that need your attention, check when your next meeting is coming up, and keep up with your progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
